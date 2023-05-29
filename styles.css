@@ -1,0 +1,75 @@
+/* Set tinggi 100% untuk elemen html dan body */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  
+}
+
+/* Gaya untuk kontainer utama */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr; /* Membagi tata letak menjadi 3 kolom yang sama lebar */
+  grid-template-rows: 1fr 6fr; /* Baris akan menyesuaikan konten secara otomatis */
+  grid-gap: 10px; /* Jarak antara elemen-elemen grid */
+  height: 100%; /* Mengisi tinggi kontainer dengan 100% tinggi layar */
+  background-color: #222; /* Warna latar belakang untuk tema dark mode */
+  color: #fff; /* Warna teks untuk tema dark mode */
+}
+
+/* Gaya untuk header */
+.header,
+.sidebar,
+.main {
+  padding: 20px; /* Padding untuk memberikan ruang di sekitar konten */
+  background-color: #333; /* Warna latar belakang untuk tema dark mode */
+}
+
+.header {
+  grid-column: 1 / span 2; /* Menggunakan 3 kolom untuk header */
+  display: flex;
+  justify-content: center; /* Mengatur posisi secara horizontal di tengah */
+  align-items: center; /* Mengatur posisi secara vertikal di tengah */
+  text-align: center;
+ 
+}
+
+.sidebar {
+  grid-column: 1; /* Menggunakan 1 kolom untuk sidebar */
+}
+
+.main {
+  grid-column: 2; /* Menggunakan 2 kolom untuk main content */
+  overflow: scroll; 
+  padding: 40px;
+  
+}
+
+.main::-webkit-scrollbar {
+  width: 1px; /* Lebar scrollbar */
+  height: 1px; /* Tinggi scrollbar */
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Warna thumb scrollbar */
+}
+
+
+.article {
+  max-height: 100%; /* Mengatur tinggi maksimal artikel sesuai tinggi .main */
+  overflow-y: scroll; /* Menampilkan scrollbar secara default */
+}
+
+.article p {
+  text-align: justify;
+}
+
+
+.article::-webkit-scrollbar {
+  width: 0.5em; /* Lebar scrollbar */
+  background-color: #F5F5F5; /* Warna latar belakang scrollbar */
+}
+
+.article::-webkit-scrollbar-thumb {
+  background-color: #888; /* Warna thumb scrollbar */
+}
