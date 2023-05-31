@@ -5,6 +5,28 @@ body {
   margin: 0;
   
 }
+.book-list {
+  list-style-type: none;
+  padding: 0;
+}
+  
+.book-list-item {
+  margin-bottom: 10px;
+}
+
+.book-list-item a {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+}
+
+.book-list-item a:hover {
+  background-color: #ccc;
+}
+
 
 /* Gaya untuk kontainer utama */
 .container {
@@ -37,6 +59,7 @@ body {
 .sidebar {
   grid-column: 1; /* Menggunakan 1 kolom untuk sidebar */
 }
+
 
 .main {
   grid-column: 2; /* Menggunakan 2 kolom untuk main content */
