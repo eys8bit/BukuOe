@@ -59,6 +59,17 @@ body {
 
 .sidebar {
   grid-column: 1; /* Menggunakan 1 kolom untuk sidebar */
+  display: block;
+  overflow: scroll; 
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 1px; /* Lebar scrollbar */
+  height: 1px; /* Tinggi scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Warna thumb scrollbar */
 }
 
 
@@ -74,6 +85,7 @@ body {
 
 .main {
   grid-column: 2; /* Menggunakan 2 kolom untuk main content */
+  
   overflow: scroll; 
   padding: 40px;
   
@@ -109,18 +121,4 @@ body {
 }
 
 
-/* untuk iframe*/
-#iframeWrapper {
-  
-  width: 100%;
-  height: 100%;
-  /* overflow: hidden; */
-}
 
-#articleFrame {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
