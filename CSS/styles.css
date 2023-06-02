@@ -94,17 +94,18 @@
 }
 
 .openbtn {
-  font-size: 4px;
+  font-size: 20px;
   cursor: pointer;
   background-color: #f1f1f1;
   color: #2a2a2a;
   border: none;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-  height: 50px;
-  width: 50px;
+  /* top: 0; */
+  /* right: 10PX; */
+  /* margin-right: 10vh; */
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 .openbtn:hover {
@@ -129,6 +130,7 @@ overflow: hidden;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
+  padding-left: 40PX;
   /* overflow-x: scroll; */
 }
 
