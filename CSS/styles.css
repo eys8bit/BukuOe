@@ -91,7 +91,7 @@
 }
 
 .openbtn {
-  font-size: 20px;
+  font-size: 4vh;
   cursor: pointer;
   background-color: #f1f1f1;
   color: #818181;
@@ -101,6 +101,8 @@
   top: 0;
   right: 0;
   margin: 10px;
+  height: 8vh;
+  width: 8vh;
 }
 
 .openbtn:hover {
