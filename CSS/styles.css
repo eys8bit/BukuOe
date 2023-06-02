@@ -1,14 +1,15 @@
 /* Set tinggi 100% untuk elemen html dan body */
-html,
-body {
-  height: 100%;
+*{
   margin: 0;
   padding: 0;
-  
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+
 }
 .book-list {
   list-style-type: none;
-  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
   
 .book-list-item {
@@ -28,97 +29,124 @@ body {
   background-color: #ccc;
 }
 
-
-/* Gaya untuk kontainer utama */
-.container {
-  display: grid;
-  grid-template-columns: 1fr 6fr; /* Membagi tata letak menjadi 3 kolom yang sama lebar */
-  grid-template-rows: 1fr 6fr; /* Baris akan menyesuaikan konten secara otomatis */
-  grid-gap: 10px; /* Jarak antara elemen-elemen grid */
-  height: 100%; /* Mengisi tinggi kontainer dengan 100% tinggi layar */
-  background-color: #222; /* Warna latar belakang untuk tema dark mode */
-  color: #fff; /* Warna teks untuk tema dark mode */
-}
-
-/* Gaya untuk header */
-.header,
-.sidebar,
-.main {
-  padding: 20px; /* Padding untuk memberikan ruang di sekitar konten */
-  background-color: #333; /* Warna latar belakang untuk tema dark mode */
-}
-
-.header {
-  grid-column: 1 / span 2; /* Menggunakan 3 kolom untuk header */
-  display: flex;
-  justify-content: center; /* Mengatur posisi secara horizontal di tengah */
-  align-items: center; /* Mengatur posisi secara vertikal di tengah */
-  text-align: center;
- 
-}
-
+/* Style untuk menu navigasi */
 .sidebar {
-  grid-column: 1; /* Menggunakan 1 kolom untuk sidebar */
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #2a2a2a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
   display: block;
-  overflow: scroll; 
+  transition: 0.3s;
 }
 
-.sidebar::-webkit-scrollbar {
-  width: 1px; /* Lebar scrollbar */
-  height: 1px; /* Tinggi scrollbar */
+/* .sidebar a:hover {
+  color: #f1f1f1;
+} */
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Warna thumb scrollbar */
-}
-
-
-.sidebar::-webkit-scrollbar {
-  width: 1px; /* Lebar scrollbar */
-  height: 1px; /* Tinggi scrollbar */
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Warna thumb scrollbar */
-}
-
-
-.main {
-  grid-column: 2; /* Menggunakan 2 kolom untuk main content */
-  
-  overflow: scroll; 
-  padding: 40px;
+.boxMenu{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
   
 }
 
-.main::-webkit-scrollbar {
-  width: 1px; /* Lebar scrollbar */
-  height: 1px; /* Tinggi scrollbar */
+.boxMenu::-webkit-scrollbar {
+  width: 0px;
+  background-color: #f1f1f1;
 }
 
-.main::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Warna thumb scrollbar */
+.boxMenu::-webkit-scrollbar-thumb {
+  background-color: #888;
 }
 
-
-.article {
-  max-height: 100%; /* Mengatur tinggi maksimal artikel sesuai tinggi .main */
-  overflow-y: scroll; /* Menampilkan scrollbar secara default */
+.boxMenu::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
-.article p {
+.boxMenu::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* border-radius: 4px; */
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #818181;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.openbtn:hover {
+  background-color: #fff;
+}
+
+#menuTombol {
+  display: block;
+  transition: margin-right .5s;
+  height: 100vh;
+  overflow: hidden;
+  background-color:#2a2a2a;
+}
+
+.tutup{
+height: 100%;
+padding: 1%;
+overflow: hidden;
+}
+.utama{
+
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.utama::-webkit-scrollbar {
+  width: 0px;
+  background-color: #f1f1f1;
+}
+
+.utama::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.utama::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.utama::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* border-radius: 4px; */
+}
+.utama p{
   text-align: justify;
 }
-
-
-.article::-webkit-scrollbar {
-  width: 0.5em; /* Lebar scrollbar */
-  background-color: #F5F5F5; /* Warna latar belakang scrollbar */
+.jarak{
+  height: 200px;
 }
-
-.article::-webkit-scrollbar-thumb {
-  background-color: #888; /* Warna thumb scrollbar */
-}
-
-
-
