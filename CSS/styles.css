@@ -64,6 +64,10 @@
   margin-left: 50px;
 }
 
+.sidebar .boxMenu .book-list .book-list-item a{
+  color: #2a2a2a;
+}
+
 .boxMenu{
   height: 100%;
   width: 100%;
