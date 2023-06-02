@@ -95,14 +95,13 @@
   cursor: pointer;
   background-color: #f1f1f1;
   color: #818181;
-  padding: 10px 15px;
   border: none;
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
-  height: 8vh;
-  width: 8vh;
+  height: 50px;
+  width: 50px;
 }
 
 .openbtn:hover {
