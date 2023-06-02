@@ -151,6 +151,8 @@ overflow: hidden;
 }
 .utama p{
   text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   
 }
 .jarak{
