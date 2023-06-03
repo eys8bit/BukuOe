@@ -164,8 +164,9 @@ article{
   margin-right: 20px;
 }
 
-img{
+article img{
   width: 100%;
+  height: auto;
 }
 
 .jarak{
