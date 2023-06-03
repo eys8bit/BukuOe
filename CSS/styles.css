@@ -165,12 +165,12 @@ article{
 }
 
 article img{
-  padding-right: 20px;
+  /* padding-right: 20px; */
   width: 100%;
   height: auto;
   
 }
 
-.jarak{
+article .jarak{
   height: 200px;
 }
