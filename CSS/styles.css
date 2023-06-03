@@ -123,7 +123,7 @@
 .tutup{
 height: 100%;
 padding: 1%;
-margin-right: 20px;
+/* margin-right: 20px; */
 overflow: hidden;
 }
 .utama{
@@ -132,7 +132,7 @@ overflow: hidden;
   width: 100%;
   overflow-y: scroll;
   padding-left: 43PX;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   /* overflow-x: scroll; */
 }
 
@@ -158,6 +158,10 @@ overflow: hidden;
   word-wrap: break-word;
   overflow-wrap: break-word;
   
+}
+
+article{
+  margin-right: 20px;
 }
 .jarak{
   height: 200px;
