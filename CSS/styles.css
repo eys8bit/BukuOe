@@ -165,9 +165,10 @@ article{
 }
 
 article img{
+  padding-right: 20px;
   width: 100%;
   height: auto;
-  margin-right: 20px;
+  
 }
 
 .jarak{
