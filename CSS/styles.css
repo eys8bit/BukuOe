@@ -163,6 +163,11 @@ overflow: hidden;
 article{
   margin-right: 20px;
 }
+
+img{
+  width: 100%;
+}
+
 .jarak{
   height: 200px;
 }
