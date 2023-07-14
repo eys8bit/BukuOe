@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
-body{
+article{
     display: flex;
     justify-content: center;
     align-self: center;
