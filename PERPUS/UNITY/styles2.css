@@ -6,12 +6,15 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+img{
+    height: 50px;
+}
 article{
     display: flex;
     justify-content: center;
     align-self: center;
     min-height: 100vh;
-    background: #222;
+    background: #a41a1a;
 }
 
 .container{

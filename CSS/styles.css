@@ -162,9 +162,7 @@ overflow: hidden;
   
 }
 
-article{
-  /* margin-right: 20px; */
-}
+
 
 article img{
   /* padding-right: 20px; */
@@ -175,4 +173,9 @@ article img{
 
 article .jarak{
   height: 200px;
+}
+
+img{
+  height: 30px;
+  width: 30px;
 }
