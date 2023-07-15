@@ -259,6 +259,13 @@ article .container .box .scroll .item:hover{
 }
 
 @media (max-width: 991px){
+
+ 
+  article{
+    height: 100%;
+    width: 100%;
+  }
+
   article .container{
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
       grid-template-rows: minmax(auto, auto);
