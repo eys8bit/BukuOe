@@ -98,6 +98,7 @@
 }
 
 .openbtn {
+  z-index: 3;
   font-size: 20px;
   cursor: pointer;
   background-color: #f1f1f1;
@@ -107,8 +108,8 @@
   right: 20px;
   bottom: 20px;
   margin-top: 8px;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 
 .openbtn:hover {
@@ -120,12 +121,12 @@
   transition: margin-right .5s;
   height: 100vh;
   overflow: hidden;
-  background-color:#d93b3b;
+  background-color:#33ad51;
 }
 
 .tutup{
 height: 100%;
-padding: 1%;
+/* padding: 1%; */
 /* margin-right: 20px; */
 overflow: hidden;
 }
@@ -166,14 +167,14 @@ overflow: hidden;
 
 
 
-
+/* */
 
 article{
   display: flex;
   justify-content: center;
   align-self: center;
   min-height: 100vh;
-  background: #a41a1a;
+  /* background: #a41a1a; */
 }
 
 article .container{
@@ -275,5 +276,7 @@ article .container .box .scroll .item:hover{
   article .container .box .scroll::-webkit-scrollbar{
       width: 0;
   }
+  
 
 }
+/* */
