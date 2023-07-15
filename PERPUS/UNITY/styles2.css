@@ -6,9 +6,6 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
-img{
-    height: 50px;
-}
 article{
     display: flex;
     justify-content: center;
@@ -17,7 +14,7 @@ article{
     background: #a41a1a;
 }
 
-.container{
+article .container{
     position: relative;
     max-width: 100%;
     display: grid;
@@ -27,7 +24,7 @@ article{
     grid-auto-flow: dense;
     grid-gap: 10px;
 }
-.container .box{
+article .container .box{
     background: #333;
     padding: 20px;
     display: grid;
@@ -37,34 +34,34 @@ article{
     color: #fff;
     transition: 0.5%;
 }
-.container .box:hover{
+article .container .box:hover{
     background: #e91e63;
 }
 
-.container .box .conten img{
+article .container .box .conten img{
     position: relative;
     max-width: 100px;
     margin-bottom: 10px;
 }
 
-.container .box:nth-child(1){
+article .container .box:nth-child(1){
     grid-column: span 2;
     grid-row: span 1;
 }
-.container .box:nth-child(2){
+article .container .box:nth-child(2){
     grid-column: span 1;
     grid-row: span 2;
 }
-.container .box:nth-child(4){
+article .container .box:nth-child(4){
     grid-column: span 1;
     grid-row: span 2;
 }
-.container .box:nth-child(5){
+article .container .box:nth-child(5){
     grid-column: span 3;
     grid-row: span 1;
 }
 
-.container .box .scroll{
+article .container .box .scroll{
     height: 100%;
     width: 100%;
     display: flex;
@@ -73,12 +70,12 @@ article{
     
 }
 
-.container .box .scroll::-webkit-scrollbar{
+article .container .box .scroll::-webkit-scrollbar{
     width: 0;
     height: 0;
 }
 
-.container .box .scroll .item{
+article .container .box .scroll .item{
     min-width: 100px;
     height: 100%;
     display: flex;
@@ -89,21 +86,21 @@ article{
     cursor: pointer;
 }
 
-.container .box .scroll .item:hover{
+article .container .box .scroll .item:hover{
     background: #e91e63;
 }
 
 @media (max-width: 991px){
-    .container{
+    article .container{
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
         grid-template-rows: minmax(auto, auto);
     }
-    .container .box{
+    article .container .box{
         grid-column: unset !important;
         grid-row: unset !important;
     }
 
-    .container .box .scroll .item{
+    article .container .box .scroll .item{
         min-width: 100px;
         height: 100px;
         display: flex;
@@ -113,7 +110,7 @@ article{
         margin-right: 2px;
         padding: 0;
     }
-    .container .box .scroll::-webkit-scrollbar{
+    article .container .box .scroll::-webkit-scrollbar{
         width: 0;
     }
   

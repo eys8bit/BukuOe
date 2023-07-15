@@ -1,9 +1,11 @@
 /* Set tinggi 100% untuk elemen html dan body */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -102,8 +104,8 @@
   color: #2a2a2a;
   border: none;
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 20px;
+  bottom: 20px;
   margin-top: 8px;
   height: 40px;
   width: 40px;
@@ -118,7 +120,7 @@
   transition: margin-right .5s;
   height: 100vh;
   overflow: hidden;
-  background-color:#2a2a2a;
+  background-color:#d93b3b;
 }
 
 .tutup{
@@ -164,18 +166,114 @@ overflow: hidden;
 
 
 
-article img{
-  /* padding-right: 20px; */
+
+
+article{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  min-height: 100vh;
+  background: #a41a1a;
+}
+
+article .container{
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+article .container .box{
+  background: #333;
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  transition: 0.5%;
+}
+article .container .box:hover{
+  background: #e91e63;
+}
+
+article .container .box .conten img{
+  position: relative;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+article .container .box:nth-child(1){
+  grid-column: span 2;
+  grid-row: span 1;
+}
+article .container .box:nth-child(2){
+  grid-column: span 1;
+  grid-row: span 2;
+}
+article .container .box:nth-child(4){
+  grid-column: span 1;
+  grid-row: span 2;
+}
+article .container .box:nth-child(5){
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+article .container .box .scroll{
+  height: 100%;
   width: 100%;
-  height: auto;
+  display: flex;
+  
+  overflow-x: scroll;
   
 }
 
-article .jarak{
-  height: 200px;
+article .container .box .scroll::-webkit-scrollbar{
+  width: 0;
+  height: 0;
 }
 
-img{
-  height: 30px;
-  width: 30px;
+article .container .box .scroll .item{
+  min-width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33ad51;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+article .container .box .scroll .item:hover{
+  background: #e91e63;
+}
+
+@media (max-width: 991px){
+  article .container{
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-template-rows: minmax(auto, auto);
+  }
+  article .container .box{
+      grid-column: unset !important;
+      grid-row: unset !important;
+  }
+
+  article .container .box .scroll .item{
+      min-width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #33ad51;
+      margin-right: 2px;
+      padding: 0;
+  }
+  article .container .box .scroll::-webkit-scrollbar{
+      width: 0;
+  }
+
 }
