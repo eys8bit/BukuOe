@@ -290,6 +290,7 @@ article .container .box .scroll .item:hover{
   }
 
   .openbtn {
+    position: fixed;
     z-index: 3;
     font-size: 20px;
     cursor: pointer;
