@@ -1,52 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Pengertian Hewan</title>
-  <link rel="stylesheet" href="CSS/styles.css">
-  <script src="script.js" defer></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="warna.css">
 </head>
 <body>
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">X</a>
+    <div class="container">
 
-    <div class="boxMenu">
-      <ul class="book-list">
-        <li class="book-list-item">
-          <a href="javascript:void(0)" class="article-link" onclick="toggleNav()" data-article="PERPUS/BLENDER/article1.html">BLENDER</a>
-        </li>
-        <li class="book-list-item">
-          <a href="javascript:void(0)" class="article-link" onclick="toggleNav()" data-article="PERPUS/UNITY/article2.html">UNITY</a>
-        </li>
-      </ul>
-  </div>
+        <div class="main">
+            <div class="konten"></div>
+            <div class="menuBar"></div>
+        </div>
 
-  </div>
-  
-  <div id="menuTombol">
-    <button class="openbtn" onclick="toggleNav()"> &#9776;</button>
-    <div class="tutup">
-      <div class="utama">
-        <article id="articleContent">
-          <!-- Isi artikel akan dimuat di sini -->
-        </article>
-      </div>
+        <div class="tombol">ubah</div>
     </div>
-  </div>
-  
-  <script>
-    function toggleNav() {
-      var sidebar = document.getElementById("mySidebar");
-      var menuTombol = document.getElementById("menuTombol");
-      
-      if (sidebar.style.width === "100%") {
-        sidebar.style.width = "0";
-        menuTombol.style.marginRight = "0";
-      } else {
-        sidebar.style.width = "100%";
-        menuTombol.style.marginRight = "100%";
-      }
-    }
-  </script>
+
+    <script>
+       const mainElement = document.querySelector('.main');
+const tombolElement = document.querySelector('.tombol');
+
+let gridColumns = '1fr 0fr'; // Inisialisasi gridColumns dengan nilai awal
+
+tombolElement.addEventListener('click', function() {
+    // Fungsi untuk mengubah grid-template-columns
+    changeGridColumns();
+});
+
+function changeGridColumns() {
+    // Mengubah nilai gridColumns
+    gridColumns = gridColumns === '1fr 0fr' ? '0fr 1fr' : '1fr 0fr';
+    mainElement.style.gridTemplateColumns = gridColumns;
+}
+
+    </script>
 </body>
 </html>
