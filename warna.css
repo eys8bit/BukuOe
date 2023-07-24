@@ -35,9 +35,9 @@ body .container {
   /* padding: 20px; */
 }
 
-.kontenHide {
-  display: none;
-}
+/* .kontenHide {
+  display: block;
+} */
 
 .main .konten #articleContent {
   z-index: 1;

@@ -73,12 +73,10 @@
         changeGridColumns();
         if (window.getComputedStyle(menuBarHideElement).display === "none") {
           menuBarHideElement.style.display = "block";
+          kontenHideElement.style.display = "none";
         } else {
           menuBarHideElement.style.display = "none";
-        }
-
-        if (window.getComputedStyle(kontenHideElement).display === "block") {
-          kontenHideElement.style.display = "none";
+          kontenHideElement.style.display = "block";
         }
       });
 
