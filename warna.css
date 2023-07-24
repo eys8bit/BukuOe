@@ -5,20 +5,33 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
-/* body{
-    height: 100%; 
-    top: 0;
-    bottom: 0;
-    width: 100%;
-} */
-body .container {
-  position: absolute;
+body {
   height: 100%;
-  top: 0;
-  bottom: 0;
   width: 100%;
 }
 
+body .container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Menghilangkan ikon scrollbar */
+  -ms-overflow-style: none; /* Untuk browser Internet Explorer */
+  /* Vendor prefixes */
+  ::-webkit-scrollbar {
+    display: none; /* Untuk browser berbasis WebKit (misalnya Chrome) */
+  }
+  scrollbar-width: none;
+}
+article {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+article img {
+  height: 200px;
+}
 .main {
   z-index: 2;
   display: grid;
@@ -31,12 +44,12 @@ body .container {
 
 .main .konten {
   background-color: #b74848;
-
+  height: 100%;
+  width: 100%;
   /* padding: 20px; */
 }
 
 /* .kontenHide {
-  display: block;
 } */
 
 .main .konten #articleContent {
