@@ -24,12 +24,7 @@ body .container {
   }
   scrollbar-width: none;
 }
-article {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-}
-article img {
+img {
   height: 200px;
 }
 .main {

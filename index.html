@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web</title>
-    <link rel="stylesheet" href="warna.css" />
-    <!-- <link rel="stylesheet" href="00_UJI COBA/gaya.css" /> -->
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="CSS/warna.css" />
   </head>
   <body>
     <div class="container">
@@ -27,113 +25,26 @@
             <button onclick="searchButton()">Cari</button>
             <div class="tombolC">
               <button
-                class="book-list-item"
+                class="blender"
                 onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
               >
-                Ambil Konten Pertama
+                BLENDER
               </button>
               <button
                 class="sampah"
                 id="myButton"
-                data-width="200"
-                onclick="ambilKonten('kedua.html')"
-              >
-                Ambil Konten Kedua
-              </button>
-              <button
-                class="sampah2"
-                id="myButton"
                 onclick="ambilKonten('PERPUS/UNITY/article2.html')"
               >
-                Ambil Konten Ketiga
+                UNITY
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="tombol">ubah</div>
+      <div class="tombol">menu</div>
     </div>
-
-    <script>
-      const mainElement = document.querySelector(".main");
-      const kontenHideElement = document.querySelector(".kontenHide");
-      const menuBarHideElement = document.querySelector(".menuBarHide");
-      const tombolElement = document.querySelector(".tombol");
-      const tombolBookListItemElement =
-        document.querySelector(".book-list-item");
-      const sampah1 = document.querySelector(".sampah");
-      const sampah2 = document.querySelector(".sampah2");
-
-      let gridColumns = "1fr 0fr"; // Inisialisasi gridColumns dengan nilai awal
-
-      tombolElement.addEventListener("click", function () {
-        // Fungsi untuk mengubah grid-template-columns
-
-        changeGridColumns();
-        if (window.getComputedStyle(menuBarHideElement).display === "none") {
-          menuBarHideElement.style.display = "block";
-          kontenHideElement.style.display = "none";
-        } else {
-          menuBarHideElement.style.display = "none";
-          kontenHideElement.style.display = "block";
-        }
-      });
-
-      tombolBookListItemElement.addEventListener("click", function () {
-        changeGridColumns();
-        Kocak();
-      });
-
-      sampah1.addEventListener("click", function () {
-        changeGridColumns();
-        Kocak();
-      });
-
-      sampah2.addEventListener("click", function () {
-        changeGridColumns();
-        Kocak();
-      });
-
-      function Kocak() {
-        if (window.getComputedStyle(menuBarHideElement).display === "block") {
-          menuBarHideElement.style.display = "none";
-          kontenHideElement.style.display = "block";
-        }
-      }
-
-      function changeGridColumns() {
-        // Mengubah nilai gridColumns
-        gridColumns = gridColumns === "1fr 0fr" ? "0fr 1fr" : "1fr 0fr";
-        mainElement.style.gridTemplateColumns = gridColumns;
-      }
-
-      //========================================================================================================================
-
-      var button = document.getElementById("myButton");
-      var width = button.getAttribute("data-width");
-
-      // Konversi nilai width menjadi string dan tambahkan "px" untuk inline style
-      button.style.width = width + "px";
-      button.style.height = "40px";
-      button.style.backgroundColor = "blue";
-
-      //========================================================================================================================
-
-      function searchButton() {
-        const searchInput = document.getElementById("searchInput").value;
-        const buttons = document.querySelectorAll(".tombolC button");
-
-        buttons.forEach((button) => {
-          if (
-            button.textContent.toLowerCase().includes(searchInput.toLowerCase())
-          ) {
-            button.style.display = "block";
-          } else {
-            button.style.display = "none";
-          }
-        });
-      }
-    </script>
   </body>
+  <script src="script.js" defer></script>
+  <script src="Javascript/tombolBuku.js"></script>
 </html>
