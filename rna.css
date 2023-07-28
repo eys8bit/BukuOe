@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+/* ===================================================== */
+body.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  background: blue;
+}
+.isi {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+.hed {
+  height: 100px;
+  width: 100px;
+  background: blue;
+}
+
+img {
+  height: 100px;
+}
+
+p {
+  color: blue; /* Ganti "blue" dengan warna pilihan Anda */
+}

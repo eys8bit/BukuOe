@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
+
 body {
   height: 100%;
   width: 100%;
@@ -24,9 +25,7 @@ body .container {
   }
   scrollbar-width: none;
 }
-img {
-  height: 200px;
-}
+
 .main {
   z-index: 2;
   display: grid;
@@ -47,9 +46,9 @@ img {
 /* .kontenHide {
 } */
 
-.main .konten #articleContent {
+/* .main .konten #articleContent {
   z-index: 1;
-}
+} */
 
 .main .menuBar {
   background-color: #333;
