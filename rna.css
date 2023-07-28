@@ -7,29 +7,34 @@
 }
 
 /* ===================================================== */
-body.container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: blue;
-  background: blue;
-}
-.isi {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  background-color: green;
-}
-.hed {
-  height: 100px;
-  width: 100px;
-  background: blue;
-}
 
 img {
   height: 100px;
 }
 
-p {
-  color: blue; /* Ganti "blue" dengan warna pilihan Anda */
+.isi {
+  position: fixed;
+  height: 100%;
+  /* width: 100%; */
+  background-color: blue;
+
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  /* word-wrap: break-word; */
+}
+
+.isi .wrap {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  word-wrap: break-word;
+  background-color: yellow;
+  max-width: 600px;
+}
+
+.isi h1,
+.isi p {
+  overflow-wrap: break-word;
+  width: 100%;
 }
