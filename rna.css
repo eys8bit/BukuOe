@@ -12,22 +12,22 @@ img {
   height: 100px;
 }
 
-body .container .main .konten .kontenHide {
+/* body .container .main .konten .kontenHide {
   position: fixed;
   word-wrap: break-word;
   text-align: justify;
   width: 50%;
   height: 100%;
   background-color: blue;
-}
+} */
 
-body .container .main .konten .kontenHide p {
+/* body .container .main .konten .kontenHide p {
   max-width: 400px;
   height: 600px;
   background-color: gold;
   word-wrap: break-word;
   color: green;
-}
+} */
 
 .wrap {
   word-wrap: break-word;
