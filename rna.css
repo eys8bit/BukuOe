@@ -29,9 +29,10 @@ body .container .main .konten .kontenHide p {
   color: green;
 }
 
-.container .wrap {
+.wrap {
   word-wrap: break-word;
-  max-width: 500px;
+  height: 500px;
+  max-width: 400px;
   text-align: justify;
   padding: 20px;
 }
