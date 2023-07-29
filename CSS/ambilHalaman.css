@@ -1,0 +1,19 @@
+/* ===================================================== */
+
+img {
+  height: 100px;
+}
+
+.wrap {
+  word-wrap: break-word;
+  height: 200px;
+  max-width: 100%;
+  text-align: justify;
+  color: #fff;
+}
+
+.kontenArtikel {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
