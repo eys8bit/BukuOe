@@ -36,13 +36,13 @@ body .container {
 }
 
 .main .konten {
-  background-color: #b74848;
+  background-color: #12043e;
   height: 100%;
   width: 100%;
 }
 
 .main .menuBar {
-  background-color: #333;
+  background-color: #280886;
   color: #fff;
   text-align: center;
   line-height: 100px;
@@ -54,10 +54,16 @@ body .container {
 
 .tombol {
   position: absolute;
-  height: 200px;
-  width: 200px;
-  background-color: green;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border-radius: 20%;
+  background-color: #410ed3;
+  color: #fff;
   bottom: 0;
   right: 0;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
