@@ -4,7 +4,7 @@ function ambilKonten(url) {
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       // Set konten yang diambil dari url ke elemen dengan id "konten"
-      document.getElementById("konten").innerHTML = this.responseText;
+      document.getElementById("ambil").innerHTML = this.responseText;
     }
   };
   xhttp.open("GET", url, true);

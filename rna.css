@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Rubik", sans-serif;
 }
 
@@ -12,15 +12,26 @@ img {
   height: 100px;
 }
 
-.isi {
+body .container .main .konten .kontenHide {
+  position: fixed;
+  word-wrap: break-word;
+  text-align: justify;
   width: 50%;
   height: 100%;
   background-color: blue;
-  word-wrap: break-word;
-  text-align: justify;
 }
 
-.isi p {
-  /* Menerapkan word-wrap untuk memastikan teks tidak melebihi batas */
+body .container .main .konten .kontenHide p {
+  max-width: 400px;
+  height: 600px;
+  background-color: gold;
   word-wrap: break-word;
+  color: green;
+}
+
+.wrap {
+  word-wrap: break-word;
+  max-width: 500px;
+  text-align: justify;
+  padding: 20px;
 }
