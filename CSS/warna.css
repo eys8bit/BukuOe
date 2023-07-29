@@ -10,6 +10,12 @@ body {
   height: 100%;
   width: 100%;
 }
+p {
+  color: #fff;
+}
+.item {
+  color: #fff;
+}
 
 body .container {
   position: fixed;
@@ -43,13 +49,20 @@ body .container {
 
 .main .menuBar {
   background-color: #280886;
-  color: #fff;
-  text-align: center;
-  line-height: 100px;
 }
 
 .main .menuBar .menuBarHide {
   display: none;
+}
+
+.main .menuBar .search-container {
+  height: 10vh;
+}
+.main .menuBar .tombolC {
+  height: 82vh;
+  width: 100%;
+  overflow: scroll;
+  /* background-color: green; */
 }
 
 .tombol {
@@ -66,4 +79,54 @@ body .container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* 
+//========================================================================================================================
+gaya search*/
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchInput {
+  padding: 8px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  /* margin-right: 10px; */
+}
+
+button {
+  padding: 8px 16px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #410ed3;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 
+//========================================================================================================================
+gaya buku*/
+.cariBuku {
+  margin-left: 20px;
+  margin-right: 20px;
+  /* margin-bottom: 20px; */
+  height: 40px;
+  width: 100% -40px;
+  background-color: #410ed3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }

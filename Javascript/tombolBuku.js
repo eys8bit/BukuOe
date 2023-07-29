@@ -3,7 +3,7 @@ const kontenHideElement = document.querySelector(".kontenHide");
 const menuBarHideElement = document.querySelector(".menuBarHide");
 const tombolMenu = document.querySelector(".tombol"); //menuTombol
 const blender = document.querySelector(".blender"); //buku blender
-const unity = document.querySelector(".sampah"); //buku unity
+const unity = document.querySelector(".unity"); //buku unity
 
 let gridColumns = "1fr 0fr"; // Inisialisasi gridColumns dengan nilai awal
 
@@ -47,19 +47,4 @@ function UbahGridColumn() {
   // Mengubah nilai gridColumns
   gridColumns = gridColumns === "1fr 0fr" ? "0fr 1fr" : "1fr 0fr";
   mainElement.style.gridTemplateColumns = gridColumns;
-}
-
-//========================================================================================================================
-//untuk mencari konten
-function searchButton() {
-  const searchInput = document.getElementById("searchInput").value;
-  const buttons = document.querySelectorAll(".tombolC button");
-
-  buttons.forEach((button) => {
-    if (button.textContent.toLowerCase().includes(searchInput.toLowerCase())) {
-      button.style.display = "block";
-    } else {
-      button.style.display = "none";
-    }
-  });
 }
