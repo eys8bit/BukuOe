@@ -13,9 +13,6 @@ img {
 }
 
 .isi {
-  position: absolute;
-  /* Menghapus position: fixed; untuk memungkinkan konten melebihi lebar viewport */
-  /* Menghapus max-width atau tingkatkan nilainya jika kontennya terlalu lebar */
   width: 50%;
   height: 100%;
   background-color: blue;
