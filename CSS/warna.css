@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
 
@@ -12,11 +12,11 @@ body {
 }
 
 body .container {
-  /* position: fixed; */
+  position: fixed;
   height: 100%;
   width: 100%;
   overflow: auto;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   scrollbar-width: none; /* Menghilangkan ikon scrollbar */
   -ms-overflow-style: none; /* Untuk browser Internet Explorer */
   /* Vendor prefixes */
@@ -27,7 +27,6 @@ body .container {
 }
 
 .main {
-  /* z-index: 2; */
   display: grid;
   grid-template-columns: 1fr 0fr;
   grid-template-rows: auto;
@@ -40,15 +39,7 @@ body .container {
   background-color: #b74848;
   height: 100%;
   width: 100%;
-  /* padding: 20px; */
 }
-
-/* .kontenHide {
-} */
-
-/* .main .konten #articleContent {
-  z-index: 1;
-} */
 
 .main .menuBar {
   background-color: #333;
@@ -62,11 +53,11 @@ body .container {
 }
 
 .tombol {
-  /* position: absolute; */
+  position: absolute;
   height: 200px;
   width: 200px;
   background-color: green;
   bottom: 0;
   right: 0;
-  /* z-index: 2; */
+  z-index: 2;
 }
