@@ -13,29 +13,17 @@ img {
 }
 
 .isi {
-  position: fixed;
+  position: absolute;
+  /* Menghapus position: fixed; untuk memungkinkan konten melebihi lebar viewport */
+  /* Menghapus max-width atau tingkatkan nilainya jika kontennya terlalu lebar */
+  width: 50%;
   height: 100%;
-  /* width: 100%; */
   background-color: blue;
   word-wrap: break-word;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  /* word-wrap: break-word; */
+  text-align: justify;
 }
 
-.isi .wrap {
-  position: fixed;
-  height: 600px;
-  width: 100%;
-  word-wrap: break-word;
-  background-color: yellow;
-  max-width: 600px;
-}
-
-.isi h1,
 .isi p {
-  position: fixed;
-  overflow-wrap: break-word;
-  width: 100%;
+  /* Menerapkan word-wrap untuk memastikan teks tidak melebihi batas */
+  word-wrap: break-word;
 }
