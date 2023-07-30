@@ -95,13 +95,14 @@ gaya search*/
 .search-container {
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  margin: 0px 20px 0px 20px;
   justify-content: center;
   align-items: center;
 }
 
 #searchInput {
+  flex-grow: 1;
   padding: 8px;
   height: 40px;
   border: 1px solid #ccc;
