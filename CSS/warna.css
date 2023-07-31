@@ -2,34 +2,28 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
-
+html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Menyertakan padding dan border dalam tinggi elemen */
 }
+
 p {
   color: #fff;
 }
+
 .item {
   color: #fff;
 }
 
-body .container {
-  position: fixed;
+.container {
   height: 100%;
-  width: 100%;
-  overflow: auto;
-  /* white-space: nowrap; */
-  scrollbar-width: none; /* Menghilangkan ikon scrollbar */
-  -ms-overflow-style: none; /* Untuk browser Internet Explorer */
-  /* Vendor prefixes */
-  ::-webkit-scrollbar {
-    display: none; /* Untuk browser berbasis WebKit (misalnya Chrome) */
-  }
-  scrollbar-width: none;
+  width: 100vw;
 }
 
 .main {
@@ -37,6 +31,7 @@ body .container {
   grid-template-columns: 1fr 0fr;
   grid-template-rows: 1fr;
   height: 100%;
+  width: 100%;
   transition: 0.3s;
 }
 
@@ -46,32 +41,52 @@ body .container {
   width: 100%;
 }
 
+.scroll1 {
+  overflow: auto;
+}
+
+.scroll1::-webkit-scrollbar {
+  display: none;
+}
+
+.kontenHide {
+  height: 100%;
+  width: 100%;
+}
+
 .menuBar {
   background-color: #69818d;
+  /* background-color: red; */
   height: 100%;
   width: 100%;
 }
 
 .main .menuBar .menuBarHide {
+  height: 100%;
+  width: 100%;
   display: none;
 }
 
 .menuBarGrid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 10fr;
-  height: 100vh;
+  grid-template-rows: 1fr 80vh;
   width: 100%;
+  height: 100%;
+  place-items: center;
 }
 
-.main .menuBar .search-container {
+/* .main .menuBar .search-container {
   height: 10vh;
-}
-.main .menuBar .tombolC {
-  height: 82vh;
+} */
+.tombolC {
+  height: 80vh;
   width: 100%;
-  overflow: scroll;
   /* background-color: green; */
+  overflow: auto;
+}
+.tombolC::-webkit-scrollbar {
+  display: none;
 }
 
 .tombol {
@@ -94,11 +109,9 @@ body .container {
 gaya search*/
 .search-container {
   display: flex;
-  align-items: center;
-
-  margin: 0px 20px 0px 20px;
   justify-content: center;
   align-items: center;
+  margin: 0px 20px 0px 20px;
 }
 
 #searchInput {
@@ -112,7 +125,7 @@ gaya search*/
 
 .buttonSearch {
   padding: 8px 16px;
-  height: 40px;
+  height: 60px;
   border: none;
   border-radius: 4px;
   background-color: #afb3b7;

@@ -12,11 +12,11 @@ let gridColumns = "1fr 0fr"; // Inisialisasi gridColumns dengan nilai awal
 tombolMenu.addEventListener("click", function () {
   UbahGridColumn();
   if (window.getComputedStyle(menuBarHideElement).display === "none") {
-    menuBarHideElement.style.display = "block";
+    menuBarHideElement.style.display = "flex";
     kontenHideElement.style.display = "none";
   } else {
     menuBarHideElement.style.display = "none";
-    kontenHideElement.style.display = "block";
+    kontenHideElement.style.display = "flex";
   }
 });
 //========================================================================================================================
@@ -35,9 +35,9 @@ unity.addEventListener("click", function () {
 //========================================================================================================================
 //untuk buka tutup
 function BukaTutup() {
-  if (window.getComputedStyle(menuBarHideElement).display === "block") {
+  if (window.getComputedStyle(menuBarHideElement).display === "flex") {
     menuBarHideElement.style.display = "none";
-    kontenHideElement.style.display = "block";
+    kontenHideElement.style.display = "flex";
   }
 }
 
