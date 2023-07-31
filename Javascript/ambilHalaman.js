@@ -3,7 +3,7 @@ function ambilKonten(url) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      // Set konten yang diambil dari url ke elemen dengan id "konten"
+      // Set konten yang diambil dari url ke elemen dengan id "ambil"
       document.getElementById("ambil").innerHTML = this.responseText;
     }
   };

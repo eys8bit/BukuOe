@@ -20,7 +20,7 @@ tombolMenu.addEventListener("click", function () {
   }
 });
 //========================================================================================================================
-//buku
+//tombol buku
 blender.addEventListener("click", function () {
   UbahGridColumn();
   BukaTutup();
@@ -38,13 +38,14 @@ function BukaTutup() {
   if (window.getComputedStyle(menuBarHideElement).display === "flex") {
     menuBarHideElement.style.display = "none";
     kontenHideElement.style.display = "flex";
+
+    // Mengubah nilai gridColumns
   }
 }
 
 //========================================================================================================================
 //mengganti grid css
 function UbahGridColumn() {
-  // Mengubah nilai gridColumns
   gridColumns = gridColumns === "1fr 0fr" ? "0fr 1fr" : "1fr 0fr";
   mainElement.style.gridTemplateColumns = gridColumns;
 }

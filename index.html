@@ -8,171 +8,50 @@
     <link rel="stylesheet" href="CSS/ambilHalaman.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="main">
-        <div class="konten scroll1">
-          <div class="kontenHide">
-            <div id="ambil"></div>
+    <div class="main">
+      <div class="konten scroll1">
+        <div id="ambil" class="kontenHide"></div>
+      </div>
+
+      <div class="menuBar menuBarHide">
+        <div class="menuBarGrid">
+          <!-- search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="ketik judul buku..."
+            />
+            <button class="buttonHapus buttonSearch" onclick="clearInput()">
+              X
+            </button>
+
+            <button class="buttonSearch" onclick="searchButton()">Cari</button>
           </div>
-        </div>
-
-        <div class="menuBar">
-          <div class="menuBarHide">
-            <div class="menuBarGrid">
-              <!-- search -->
-              <div class="search-container">
-                <input
-                  type="text"
-                  id="searchInput"
-                  placeholder="ketik judul buku..."
-                />
-                <button class="buttonHapus buttonSearch" onclick="clearInput()">
-                  X
-                </button>
-
-                <button class="buttonSearch" onclick="searchButton()">
-                  Cari
-                </button>
-              </div>
-              <!-- ================================================================================ -->
-              <!-- buku -->
-              <div class="tombolC .scroll1">
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <!-- //======================================================================================================================== -->
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <div
-                  class="blender cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-                >
-                  BLENDER
-                </div>
-                <div
-                  class="unity cariBuku"
-                  id="cariBukuId"
-                  onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-                >
-                  UNITY
-                </div>
-                <!-- //======================================================================================================================== -->
-              </div>
+          <!-- ================================================================================ -->
+          <!-- buku -->
+          <div class="tombolC .scroll1">
+            <div
+              class="blender cariBuku"
+              id="cariBukuId"
+              onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
+            >
+              BLENDER
             </div>
+            <div
+              class="unity cariBuku"
+              id="cariBukuId"
+              onclick="ambilKonten('PERPUS/UNITY/article2.html')"
+            >
+              UNITY
+            </div>
+            <!-- //======================================================================================================================== -->
           </div>
         </div>
       </div>
-
-      <div class="tombol">MENU</div>
     </div>
+
+    <div class="tombol">MENU</div>
   </body>
   <script src="Javascript/ambilHalaman.js" defer></script>
   <script src="Javascript/tombolBuku.js"></script>
