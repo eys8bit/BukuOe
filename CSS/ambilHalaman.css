@@ -22,3 +22,11 @@ a {
 .padding10 {
   padding: 10px;
 }
+
+/* //======================================================================================================================== */
+.gambarTengah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
