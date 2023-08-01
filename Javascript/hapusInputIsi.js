@@ -22,3 +22,31 @@ function searchButton() {
     }
   });
 }
+
+//========================================================================================================================
+function redirectToChatGPT() {
+  // Simpan URL halaman saat ini sebelum mengarahkan ke chat.openai.com
+  var currentPageUrl = window.location.href;
+
+  // Mengarahkan pengguna ke https://chat.openai.com
+  window.location.href = "https://chat.openai.com";
+
+  // Simpan URL halaman saat ini ke dalam localStorage
+  // sehingga dapat diakses setelah pengguna menekan tombol kembali
+  localStorage.setItem("previousPageUrl", currentPageUrl);
+}
+
+// Fungsi ini akan dipanggil ketika pengguna menekan tombol kembali
+function goBack() {
+  // Dapatkan URL halaman sebelumnya dari localStorage
+  var previousPageUrl = localStorage.getItem("previousPageUrl");
+
+  // Arahkan pengguna ke halaman sebelumnya (jika tersedia)
+  if (previousPageUrl) {
+    window.location.href = previousPageUrl;
+  } else {
+    // Jika URL halaman sebelumnya tidak tersedia, arahkan pengguna ke halaman lain (atau lakukan tindakan lainnya)
+    // Misalnya, arahkan ke halaman utama situs Anda:
+    window.location.href = "https://www.example.com";
+  }
+}
