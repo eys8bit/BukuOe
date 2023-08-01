@@ -10,9 +10,7 @@ img {
   max-width: 100%;
   text-align: justify;
 }
-p {
-  color: #fff;
-}
+
 .item {
   color: #fff;
 }
@@ -22,8 +20,14 @@ a {
 .padding10 {
   padding: 10px;
 }
-body p .blue {
+p {
+  color: #fff;
+}
+.biru {
   color: blue;
+}
+.red {
+  color: red;
 }
 
 /* gambar ke tengah  //======================================================================================================================== */
