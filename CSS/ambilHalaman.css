@@ -22,7 +22,7 @@ a {
 .padding10 {
   padding: 10px;
 }
-p .blue {
+body p .blue {
   color: blue;
 }
 
