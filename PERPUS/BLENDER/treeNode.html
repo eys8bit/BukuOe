@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/warna.css" />
+    <link rel="stylesheet" href="CSS/ambilHalaman.css" />
     <title>Tree dengan Tag a</title>
     <style>
       /* CSS Part */
@@ -15,11 +17,6 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-      }
-
-      .node {
-        fill: #a52a2a;
-        cursor: pointer;
       }
 
       .node text {
@@ -44,10 +41,10 @@
         name: "GO",
         children: [
           {
-            name: " Node 1 ",
+            name: " test ",
             children: [
-              { name: "Leaf 1.2", href: "https://example.com/leaf1.2" },
-              { name: "Leaf 1.2", href: "https://example.com/leaf1.2" },
+              { name: "Leaf 1.2", href: "../UNITY/article2.html" },
+              { name: "Leaf 1.2", href: "../UNITY/article2.html" },
             ],
           },
           {
@@ -148,17 +145,30 @@
         .attr("fill", "#6954c3");
 
       node
+        .append("a")
+        .attr("href", (d) => d.data.href) // Menambahkan atribut href ke elemen a
         .append("text")
         .attr("dy", "0.35em")
         .style("text-anchor", "middle")
         .text((d) => d.data.name)
-        .attr("fill", "white");
+        .attr("fill", "white")
+        .on("click", (d) => {
+          if (d.data.href) {
+            ambilKonten(d.data.href);
+          }
+        });
 
-      node.on("click", (d) => {
-        if (d.data.href) {
-          window.open(d.data.href, "_blank");
-        }
-      });
+      function ambilKonten(url) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            // Set konten yang diambil dari url ke elemen dengan id "ambil"
+            document.getElementById("ambil").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+      }
     </script>
   </body>
 </html>
