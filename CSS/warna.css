@@ -8,7 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  box-sizing: border-box; /* Menyertakan padding dan border dalam tinggi elemen */
+  /* box-sizing: border-box; Menyertakan padding dan border dalam tinggi elemen */
 }
 
 .main {

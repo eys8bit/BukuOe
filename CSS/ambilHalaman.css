@@ -43,7 +43,7 @@ h1 {
 }
 
 .full100 {
-  position: relative;
+  position: fixed;
   height: 100%;
   width: 100%;
 }
