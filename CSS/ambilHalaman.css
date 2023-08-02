@@ -48,9 +48,8 @@ h1 {
   width: 100%;
 }
 
-ul {
-  list-style-type: none;
-}
-ul ul {
-  margin-left: 20px;
+.kotak {
+  height: var(--tinggi-height);
+  width: var(--lebar-width);
+  background-color: var(--bg-color);
 }

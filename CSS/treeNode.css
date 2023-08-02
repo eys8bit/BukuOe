@@ -1,0 +1,21 @@
+.tree-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.node {
+  fill: #a52a2a;
+  cursor: pointer;
+}
+
+.node text {
+  fill: white;
+}
+
+.link {
+  fill: none;
+  stroke: #004d40;
+  stroke-width: 2;
+}
