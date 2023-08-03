@@ -8,16 +8,16 @@
     <title>Tree dengan Tag a</title>
     <style>
       /* CSS Part */
-      body {
+      /* body {
         font-family: Arial, sans-serif;
       }
 
       .tree-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         height: 100vh;
-      }
+      } */
 
       .node text {
         fill: white;
@@ -31,9 +31,9 @@
     </style>
   </head>
   <body>
-    <div class="tree-container" id="tree-container">
-      <svg id="tree-svg" width="1000" height="600"></svg>
-    </div>
+    <svg id="tree-svg" width="1000" height="600"></svg>
+    <!-- <div class="tree-container" id="tree-container">
+    </div> -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
       /* JavaScript Part */
@@ -159,15 +159,15 @@
         });
 
       function ambilKonten(url) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            // Set konten yang diambil dari url ke elemen dengan id "ambil"
-            document.getElementById("ambil").innerHTML = this.responseText;
-          }
-        };
-        xhttp.open("GET", url, true);
-        xhttp.send();
+        // var xhttp = new XMLHttpRequest();
+        // xhttp.onreadystatechange = function () {
+        //   if (this.readyState == 4 && this.status == 200) {
+        //     // Set konten yang diambil dari url ke elemen dengan id "ambil"
+        //     document.getElementById("ambil").innerHTML = this.responseText;
+        //   }
+        // };
+        // xhttp.open("GET", url, true);
+        // xhttp.send();
       }
     </script>
   </body>
