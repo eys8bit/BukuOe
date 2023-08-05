@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tree with D3.js</title>
+    <link rel="stylesheet" href="a_unity.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <div class="treeLine">
+      <svg width="4000" height="800">
+        <g id="tree" transform="translate(100, 20)"></g>
+      </svg>
+    </div>
+
+    <div class="kontenIframe">
+      <iframe id="ambil" width="100%" height="100%"></iframe>
+    </div>
+
+    <div class="menu-konten-btn">
+      <svg
+        class="menu-konten-icon"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M15 3l-9 7 9 7V3z" />
+      </svg>
+    </div>
+
+    <script src="kontenHide.js"></script>
+    <script src="treeData.js"></script>
+    <script src="../../js/treeLine.js"></script>
+  </body>
+</html>

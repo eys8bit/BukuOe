@@ -1,0 +1,81 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --node-width: 160px;
+  --line-color: green;
+  --box-fill-color: lightsteelblue;
+  --box-stroke-color: steelblue;
+  --box-stroke-width: 1.5px;
+  --box-border-radius: 6px;
+}
+
+.node rect {
+  fill: var(--box-fill-color);
+  stroke: var(--box-stroke-color);
+  stroke-width: var(--box-stroke-width);
+  padding: 10px;
+  rx: var(--box-border-radius);
+  ry: var(--box-border-radius);
+}
+.node text {
+  font: 12px sans-serif;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.link {
+  fill: none;
+  stroke: var(--line-color);
+  stroke-width: 2.5px;
+}
+.treeLine svg {
+  border: 2px solid rgb(215, 119, 119); /* Ganti dengan warna dan lebar sesuai kebutuhan */
+}
+.treeLine {
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  overflow: auto;
+}
+.treeLine::-webkit-scrollbar {
+  display: none;
+}
+
+.kontenIframe {
+  position: fixed;
+  z-index: 98;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(204, 105, 105);
+}
+
+.menu-konten-btn {
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 60px;
+  z-index: 999;
+  background-color: green;
+}
+.treeLine.active {
+  right: 0;
+}
+
+.menu-konten-icon {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  transition: 0.4s;
+}
+
+.treeLine {
+  display: block; /* default display */
+}
+
+.hidden {
+  display: none;
+}

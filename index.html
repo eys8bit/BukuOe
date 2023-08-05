@@ -3,71 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web</title>
-    <link rel="stylesheet" href="CSS/warna.css" />
-    <link rel="stylesheet" href="CSS/ambilHalaman.css" />
-    <link rel="stylesheet" href="CSS/treeNode.css" />
+    <title>Sliding Menu</title>
+    <link rel="stylesheet" href="css/tema1.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="konten scroll1">
-        <div id="ambil" class="kontenHide"></div>
-      </div>
-
-      <div class="menuBar menuBarHide">
-        <div class="menuBarGrid">
-          <!-- search -->
-          <div class="search-container">
-            <input
-              type="text"
-              id="searchInput"
-              placeholder="ketik judul buku..."
-            />
-            <button class="buttonHapus buttonSearch" onclick="clearInput()">
-              X
-            </button>
-
-            <button class="buttonSearch" onclick="searchButton()">Cari</button>
-          </div>
-          <div class="tombolC .scroll1">
-            <!-- ================================================================================ -->
-            <!-- buku -->
-
-            <div
-              class="blender cariBuku"
-              id="cariBukuId"
-              onclick="ambilKonten('PERPUS/BLENDER/article1.html')"
-            >
-              BLENDER
-            </div>
-            <div
-              class="unity cariBuku"
-              id="cariBukuId"
-              onclick="ambilKonten('PERPUS/UNITY/article2.html')"
-            >
-              UNITY
-            </div>
-            <div
-              class="chatGPT cariBuku"
-              id="cariBukuId"
-              onclick="window.location.href='https://chat.openai.com';"
-            >
-              CHAT GPT
-            </div>
-
-            <!-- //======================================================================================================================== -->
-          </div>
+    <div class="mainKonten">
+      <iframe id="ambilIframe" name="iframe" frameborder="0"></iframe>
+    </div>
+    <div class="menu-btn">
+      <svg
+        class="menu-icon"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z" />
+      </svg>
+    </div>
+    <div class="menu">
+      <div class="menuBagi">
+        <div class="search"></div>
+        <div class="listBuku">
+          <ul>
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="loadIframe('z_bukus/unity/satu.html')"
+                >Buka satu.html</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="loadIframe('z_bukus/blender/dua.html')"
+                >Buka dua.html</a
+              >
+            </li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+          <div class="jarak"></div>
         </div>
       </div>
     </div>
-
-    <div class="tombol">MENU</div>
+    <script src="js/menuGeserDanAmbil_Iframe.js"></script>
   </body>
-  <script src="Javascript/ambilHalaman.js" defer></script>
-  <script src="Javascript/tombolBuku.js"></script>
-  <script src="Javascript/hapusInputIsi.js"></script>
-  <!-- untuk tree node -->
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="Javascript/pohonCabang.js"></script>
-  <!-- end -->
 </html>
