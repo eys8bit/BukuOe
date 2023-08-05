@@ -1,5 +1,5 @@
 var treeData = {
-  name: "Root",
+  name: "BLENDER",
   url: "#",
   children: [
     {
