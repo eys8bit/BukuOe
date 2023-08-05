@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+  background-color: #333;
 }
 
 /* 
@@ -74,10 +75,10 @@ menu */
   grid-template-rows: 1fr 9fr;
 }
 .menuBagi .search {
-  background-color: rgb(218, 83, 83);
+  background-color: green;
 }
 .menuBagi .listBuku {
-  background-color: rgb(216, 115, 32);
+  background-color: #333;
   overflow: auto;
 }
 .listBuku::-webkit-scrollbar {

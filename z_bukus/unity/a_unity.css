@@ -5,8 +5,8 @@ body {
 :root {
   --node-width: 160px;
   --line-color: green;
-  --box-fill-color: lightsteelblue;
-  --box-stroke-color: steelblue;
+  --box-fill-color: green;
+  --box-stroke-color: green;
   --box-stroke-width: 1.5px;
   --box-border-radius: 6px;
 }
@@ -29,15 +29,15 @@ body {
   stroke: var(--line-color);
   stroke-width: 2.5px;
 }
-.treeLine svg {
-  border: 2px solid rgb(215, 119, 119); /* Ganti dengan warna dan lebar sesuai kebutuhan */
-}
+/* .treeLine svg {
+  border: 2px solid rgb(215, 119, 119); 
+} */
 .treeLine {
   position: fixed;
   z-index: 99;
   height: 100%;
   width: 100%;
-  background-color: blue;
+  background-color: #333;
   overflow: auto;
 }
 .treeLine::-webkit-scrollbar {
@@ -49,7 +49,7 @@ body {
   z-index: 98;
   height: 100%;
   width: 100%;
-  background-color: rgb(204, 105, 105);
+  /* background-color: rgb(204, 105, 105); */
 }
 
 .menu-konten-btn {

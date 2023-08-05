@@ -70,6 +70,7 @@ node
 
 node
   .append("text")
+  .attr("fill", "white")
   .style("font-size", "12px")
   .attr("dy", ".35em")
   .attr("text-anchor", "middle")
