@@ -53,6 +53,7 @@ search Input*/
   background-color: var(--blackDasar-color);
   border: none;
   padding: 0 5px 0 5px;
+  color: var(--whiteDasar-color);
 }
 /* end */
 
