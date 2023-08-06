@@ -1,9 +1,18 @@
+:root {
+  --bgSearch-color: green;
+  --blackDasar-color: #333;
+  --whiteDasar-color: #fff;
+  --btnMenu-color: green;
+  --menuBgColor-color: #333;
+  --boxMenu-color: green;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
-  background-color: #333;
+  background-color: var(--blackDasar-color);
 }
 
 /* 
@@ -17,7 +26,7 @@ tombol menu */
   bottom: 10px;
   right: 10px;
   z-index: 999;
-  background-color: green;
+  background-color: var(--btnMenu-color);
 }
 
 .menu-icon {
@@ -29,6 +38,24 @@ tombol menu */
 
 /* end */
 
+/* 
+//========================================================================================================================
+search Input*/
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBuku {
+  width: 90%;
+  height: 26px;
+  border-radius: 4px;
+  background-color: var(--blackDasar-color);
+  border: none;
+  padding: 0 5px 0 5px;
+}
+/* end */
+
 /*
 //========================================================================================================================
 menu */
@@ -38,7 +65,7 @@ menu */
   right: -100%;
   width: 100%;
   height: 100%;
-  background-color: #333;
+  background-color: var(--menuBgColor-color);
   transition: 0.4s;
   z-index: 998;
 }
@@ -54,14 +81,26 @@ menu */
 
 .menu li {
   width: 100%;
-  padding: 15px 0 15px 0;
-  text-align: center;
-  border-bottom: 1px solid #555;
+  padding: 0 0 15px 0;
+  /* border-bottom: 1px solid #555; */
 }
 
-.menu li a {
+/* .menu li a {
   color: #fff;
   text-decoration: none;
+} */
+
+.boxAmenu {
+  display: flex;
+  height: 30px;
+  width: 94%;
+  color: var(--whiteDasar-color);
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: var(--boxMenu-color);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .menu.active {
@@ -75,10 +114,10 @@ menu */
   grid-template-rows: 1fr 9fr;
 }
 .menuBagi .search {
-  background-color: green;
+  background-color: var(--bgSearch-color);
 }
 .menuBagi .listBuku {
-  background-color: #333;
+  background-color: var(--menuBgColor-color);
   overflow: auto;
 }
 .listBuku::-webkit-scrollbar {
