@@ -11,6 +11,7 @@ p {
   color: var(--putih-color);
   margin: 0;
   text-align: justify;
+  font-size: 10px;
 }
 .container {
   position: fixed;
