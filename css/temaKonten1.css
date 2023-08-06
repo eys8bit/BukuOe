@@ -1,0 +1,27 @@
+:root {
+  --hitam-color: #333;
+  --putih-color: white;
+}
+body {
+  background-color: var(--tulisanHitam-color);
+  padding: 10px;
+  margin: 0;
+}
+p {
+  color: var(--putih-color);
+  margin: 0;
+  text-align: justify;
+}
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.jarak {
+  height: 80px;
+}

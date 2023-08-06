@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../../css/temaKonten1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        //---------------> setingan buat leptop tanpa numpad <br />
+        -aktifkan "emulate numpad"<br />
+        -aktifkan "emulate 3 button mouse" <br /><br />
+        cttn: [<br />
+        &emsp;L : menseleksi mesh yang terhubung saja <br />
+        &emsp;ctrl+i : membalik seleksi <br />
+        &emsp;click 2x : select segaris mengelilingi (loop select) <br />
+        &emsp;a : seleksi semua <br />
+        &emsp;alt+a : deselect <br />
+        &emsp;h : hidden mesh <br />
+        &emsp;alt+h : unhiden / unisolate <br />
+        &emsp;ctrl + alt + 0 : kamera to view <br />
+        &emsp;shift+h : isolate edith mesh <br />
+        ] <br /><br />
+        //========================================================================================================================
+        //---------------> Modeling (1) <br /><br />
+        object mode: <br />
+        ctrl+j : menggabungkan mesh menjadi satu<br />
+        ctrl+p : membuat parent (select kedua object)<br />
+        shift+a : menambahkan tulang<br /><br />
+        //> edit mode:<br />
+        tab : ganti mode (object/editmode)<br />
+        shift+a : menambahkan object primitive<br />
+        ctrl+r : memotong loop (scroll untuk menambah potongan)<br />
+        i : inset faces (extrude dalam mendatar)<br />
+        x : menghapus<br />
+        alt+n : memunculkan menu untuk menormalkan dengan membalik
+        mesh(cth.flip, recalculate outside/inside, smooth/reset vector)<br />
+        z : untuk mengganti shading<br />
+        m : merge menggabungkan yang di select<br />
+        e : extrude (melebarkan mesh)<br />
+        k : cut (memotong mesh)<br />
+        ctrl+b : bevel (memperhalus sisi)<br />
+        v : memotong vertec<br />
+        p : sparate (memisahkan mesh menjadi mesh baru)<br /><br />
+        //---------------> mengatifkan menu<br />
+        ~ menu overlay <br />
+        *face orientation -> untuk mengecek face yang terlipat atau tidak<br />
+        *snap -> untuk melengketkan<br />
+        //========================================================================================================================<br /><br />
+        //========================================================================================================================
+        //---------------> uv editing (2)<br /><br />
+        u : unwrap<br />
+        alt+r : me refresh gambar di un editing<br />
+        fitur:<br />
+        mark seam : membantu memotong untuk wrap<br />
+        clear seam : menghapus garis seam<br /><br />
+        //========================================================================================================================
+        //---------------> rigging (3)<br /><br />
+        //> object mode : >1<br />
+        shif+a > armature > single bone : menambahkan satu tulang utama<br />
+        object data properties > viewport display > in front : agar tulang di
+        terlihat di depan<br /><br />
+        //> edit mode : >2<br />
+        *sesuaikan tulang gunakan (shit+d) untuk duplikat tulang / (e) untuk
+        extrude tulang<br />
+        *gunakan (ctrl+p) untuk menghubungkan tulang<br />
+        *jika inggin membagi tulang (click right) kemudian pilih (subdivide)
+        tinggal atur jumlah bagianye<br />
+        *jika inggin menduplikat tulang ke sisi satunye rename dengan format
+        (nama.l/nama.r) kemudian (click right) pilih (symmetrize)<br /><br />
+        //> object mode : >3<br />
+        *jika sudah seleksi (mesh karakter) kemudian seleksi (armature) kemudian
+        (ctrl+p) pilih (with empty group / bisa pilihan yang lain sesuai
+        kebutuhan)<br /><br />
+        //> edit mode : >4<br />
+        inverse kinematic lihat di video (yt ato apa kek)<br /><br />
+        //========================================================================================================================<br />
+        //---------------> objek data properties<br />
+        cttn : berguna untuk rigging<br /><br />
+        ~ vertex grup : mengelompokan vertex vertex menjadi grup<br />
+        * assign : menetapkan vertex(bisajuga face dan edge) yang di select<br />
+        * remove : menghapus vertex group yang di select<br />
+        //========================================================================================================================<br /><br />
+        //========================================================================================================================<br />
+        //---------------> modifier<br />
+        ~ mirror : untuk membantu simetriskan dalam modeling
+      </p>
+      <div class="jarak"></div>
+    </div>
+  </body>
+</html>
