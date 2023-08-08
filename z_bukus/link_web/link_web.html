@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Document</title> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap");
+      :root {
+        --hitam-color: #333;
+        --blue-color: blue;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      /* tampilan pc */
+      @media (min-width: 991px) {
+        .dasar {
+          position: fixed;
+          height: 100%;
+          width: 100%;
+          background-color: var(--hitam-color);
+          padding: 20px;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          grid-auto-rows: 150px;
+          overflow: auto;
+        }
+
+        a {
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          background-color: rgb(113, 81, 170);
+          border-radius: 16px;
+          color: white;
+          font-family: "Poppins", sans-serif;
+          text-align: center;
+          line-height: 100px; /* Untuk membuat teks tengah vertikal */
+          text-decoration: none; /* Menghapus garis bawah default tautan */
+          overflow: hidden;
+        }
+        .gambar {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        .dasar::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      /* tampilan mobile */
+      @media (max-width: 991px) {
+        .dasar {
+          position: fixed;
+          height: 100%;
+          width: 100%;
+          background-color: var(--hitam-color);
+          padding: 20px;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+          grid-auto-rows: 150px;
+          overflow: auto;
+        }
+
+        a {
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          background-color: rgb(113, 81, 170);
+          border-radius: 16px;
+          color: white;
+          font-family: "Poppins", sans-serif;
+          text-align: center;
+          line-height: 100px; /* Untuk membuat teks tengah vertikal */
+          text-decoration: none; /* Menghapus garis bawah default tautan */
+          overflow: hidden;
+        }
+        .gambar {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        .dasar::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dasar">
+      <a
+        href="https://www.unpak.ac.id/perkuliahan/pengumuman/kalender-akademik-jadwal-simak"
+        target="_blank"
+        class="popup-link"
+        onclick="return showConfirmation('jadwal akademik unpak');"
+      >
+        <img class="gambar" src="web_gambar/unpak.png" alt="" />jadwal unpak
+      </a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+      <a href="#">a</a>
+    </div>
+
+    <script>
+      function showConfirmation(linkText) {
+        var result = window.confirm(linkText + "?");
+
+        if (result) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

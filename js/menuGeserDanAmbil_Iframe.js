@@ -11,7 +11,8 @@ function loadIframe(url) {
 // hanya untuk uji web yang akan di tambah
 /* 
 const iframeElement = document.getElementById("ambilIframe");
-const contentURL = "z_bukus/blender/blender_page/00_catatan.html"; // Ganti dengan alamat yang sesuai
+const contentURL = "z_bukus/link_web/link_web.html"; // Ganti dengan alamat yang sesuai
 iframeElement.src = contentURL;
 */
+
 /* end */
