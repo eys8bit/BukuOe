@@ -38,6 +38,29 @@ tombol menu */
 
 /* end */
 
+/*
+//========================================================================================================================
+tombol link shortcut */
+
+.shortcut-btn {
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+  background-color: var(--btnMenu-color);
+}
+
+.menu-icon-link {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  transition: 0.4s;
+}
+
+/* end */
+
 /* 
 //========================================================================================================================
 search Input*/

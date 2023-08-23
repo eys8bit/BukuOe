@@ -1,0 +1,31 @@
+@media (max-width: 991px) {
+  /* Menggunakan max-width agar tombol hanya muncul di bawah 991px */
+  .shortcut-btn {
+    display: none; /* Sembunyikan tombol di bawah 991px */
+    /* font-size: 400px; */
+  }
+}
+.shortcut-btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: #008000;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.shortcut-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shortcut-btn:hover {
+  background-color: #005a00;
+}
